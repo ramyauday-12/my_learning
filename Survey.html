@@ -1,0 +1,52 @@
+<!--start of a code-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Feedback Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Event Feedback Survey</h1>
+    <p id="description">We’d love to hear your thoughts about your experience at our recent event. Please take a minute to fill out this short survey.</p>
+
+    <form id="survey-form">
+      <!-- Name Field -->
+      <label id="name-label" for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required placeholder="Enter your full name" /><br /><br />
+
+      <!-- Email Field -->
+      <label id="email-label" for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required placeholder="Enter your email address" /><br /><br />
+
+      <!-- Age Field -->
+      <label id="number-label" for="number">Your Age:</label><br />
+      <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age" /><br /><br />
+
+      <!-- Select Dropdown -->
+      <label for="dropdown">How did you hear about us?</label><br />
+      <select id="dropdown" name="source">
+        <option value="">-- Please choose an option --</option>
+        <option value="social">Social Media</option>
+        <option value="friend">Friend or Family</option>
+      </select><br /><br />
+
+      <!-- Radio Buttons -->
+      <p>How would you rate the event overall?</p>
+      <label><input type="radio" name="rating" value="excellent" /> Excellent</label><br />
+      <label><input type="radio" name="rating" value="good" /> Good</label><br /><br />
+
+      <!-- Checkboxes -->
+      <p>What did you enjoy at the event? (Check all that apply)</p>
+      <label><input type="checkbox" name="features" value="workshops" /> Workshops</label><br />
+      <label><input type="checkbox" name="features" value="networking" /> Networking</label><br /><br />
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments:</label><br />
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your suggestions or thoughts here..."></textarea><br /><br />
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+<!--end of a code-->
